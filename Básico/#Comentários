@@ -1,0 +1,46 @@
+# Este é um comentário de linha única em Python. Eles sempre começam com um '#'
+a = 5 # Comentários podem aparecer depois de um comando, na mesma linha
+imc = 19.55 # Índice de Massa Corpórea
+# ^ Podem servir para documentação: uma forma de tornar a leitura do seu código mais prática e rápida, como na linha acima.
+
+# DOCUMENTAÇÃO É ESSENCIAL! Procure documentar tudo, até mesmo seus primeiros programas em qualquer linguagem.
+
+# print('Essa mensagem não será mostrada')
+# ^ Comentários também são muito usados para 'desativar' um linha de código que possa ser 'reativada' depois.
+# Basicamente, o que o '#' faz é informar que o que vem após deve ser ignorado.
+
+"""
+Existe também a possibilidade dos COMENTÁRIOS EM MÚLTIPLAS LINHAS, delimitados por 3 aspas duplas...
+...tecnicamente, é um comentário 'acidental', pois na verdade é uma STRING multilinhas.
+Essas linhas, quando não declaradas como variável, são lidas e depois ignoradas.
+"""
+if False or not False:
+    print('JOGOS')
+if True and True or True or False:
+    print('SIM!')
+# ^ 'Ativado' / v 'Desativado'
+"""
+if False or not False:
+    print('DETESTO')
+if True and True or True or False or not False or not False:
+    print('JOGOS!')
+"""
+# ^ Também podemos 'DESATIVAR' um BLOCO de código.
+
+# Outra utilidade dos comentários:
+# Às vezes, colocamos impressões para acompanhar passo a passo um procedimento:
+a = int(15)
+print(a)
+b = int(37)
+print(b)
+a += a
+print(a)
+b += b
+print(b)
+c = b ** a
+print(a, b, c)
+
+"""
+...mas não queremos essas saídas no código final, apenas para fins de teste.
+Em vez de apagar e escrever toda vez, basta 'desativar' cada print com '#' 
+"""
